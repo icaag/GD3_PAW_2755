@@ -7,9 +7,9 @@
 </head>
 
 <body>
-    <a href="profil.html">Lihat Profil</a>
+    <a href="profil.html" onclick = "return confirm('Apakah Anda yakin ingin melihat halaman Profil?')">Lihat Profil</a>
     <br> 
-    <a href="form.html">Isi Form</a>
+    <a href="form.html" onclick = "return confirm('Apakah Anda yakin ingin melihat halaman Formulir Pendaftaran?')">Isi Form</a>
     <h1 id= "judulHalaman">Halaman Interaktif</h1>
 
     <p id="teks">Teks ini bisa berubah!</p>
@@ -19,6 +19,16 @@
     <label for="inputNama">Masukkan Nama:</label> 
     <input type="text" id="inputNama" name="nama" placeholder="Masukkan Nama" required>
     <button onclick="tampilkanNama()">Tampilkan</button>
+
+    <br> <br>
+    <p>Perkalian</p>
+    <label for="angka1">Masukkan Angka Pertama:</label>
+    <input type="number" id="angka1" name ="angka1">
+    <br> <br>
+    <label for="angka2">Masukkan Angka Kedua:</label>
+    <input type="number" id="angka2" name ="angka2">
+    <br>
+    <button onclick="hitungPerkalian()">Hitung</button>
     
 </body>
 
@@ -51,5 +61,13 @@
             return;
         }
         
+    }
+
+    //UGD- fungsi hitung sederhana
+    function hitungPerkalian(){
+        const angka1 = document.getElementById("angka1").value;    
+        const angka2 = document.getElementById("angka2").value; 
+        alert("Hasil " + angka1 + " dikalikan dengan " + angka2 + " adalah " + (angka1 * angka2)+ ".");
+        return;
     }
 </script>
