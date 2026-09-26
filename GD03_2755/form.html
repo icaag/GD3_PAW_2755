@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form PendaftaranFransiska Farica</title>
+</head>
+<body>
+    <a href="profil.html">Lihat Profil</a>
+    <form>
+        <br>
+
+        <label for="name">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+
+        <p>Jenis Kelamin:</p>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-Laki" required>
+        <label for="laki">Laki-laki</label>
+
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+        <label for="perempuan">Perempuan</label>
+
+        <br>
+        <br>
+
+        <label for="prodi">Program Studi:</label>
+        <select id="prodi" name="prodi" required>
+            <option value="">Pilih Program Studi</option>
+            <option value="Teknik Industri">Teknik Industri</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Siste Informasi">Sistem Infromasi</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+        <br>
+
+        <label for ="alasan">Alasan Mendaftar:</label>
+        <br>
+        <textarea id="alasan" name="alasan" rows="4" cols="50"></textarea>
+
+        <br> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
