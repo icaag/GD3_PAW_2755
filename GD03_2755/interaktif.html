@@ -15,6 +15,10 @@
     <p id="teks">Teks ini bisa berubah!</p>
     <button onclick="ubahBiru()">Ubah ke Biru</button>
 
+    <br> <br>
+    <label for="inputNama">Masukkan Nama:</label> 
+    <input type="text" id="inputNama" name="nama" placeholder="Masukkan Nama" required>
+    <button onclick="tampilkanNama()">Tampilkan</button>
     
 </body>
 
@@ -24,7 +28,7 @@
     judulHalaman.style.color = "red";
     console.log(judulHalaman.innerHTML);
 
-    // FUNCTION
+    //Function
    function sapa(nama) {
         return "Halo, " + nama + "!";
     }
@@ -34,5 +38,18 @@
     const teks = document.getElementById("teks");
     function ubahBiru() {
         teks.style.color = "blue";
+    }
+
+    //Dialog Box
+    function tampilkanNama(){
+        const inputNama = document.getElementById("inputNama").value;
+        if(inputNama === ""){
+            alert("Silakan isi nama dulu.");
+            return;
+        }else{
+            alert("Halo, " + inputNama + "!");
+            return;
+        }
+        
     }
 </script>
