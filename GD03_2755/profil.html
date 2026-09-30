@@ -2,39 +2,52 @@
 <html lang="id">
 <head>
  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Fransiska Farica Augustin Giri</title>
  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <a href="form.html" onclick = "return confirm('Apakah Anda yakin ingin melihat halaman Formulir Pendaftaran?')">Isi Form</a><br>
-     <a href="interaktif.html" onclick = "return confirm('Apakah Anda yakin ingin melihat halaman Interaktif?')">Halaman Interaktif</a>
-    <h1 id= "judul">Fransiska Farica Augustin Giri</h1>
-    <div class ="kontainer-profil">
-        <div>
-            <img src="apple.jpg" alt="Foto Profil" width="200">
+   <nav class="navigasi">
+        <a href="profil.html" aria-current="page">Profil</a>
+        <a href="form.html" onclick="return confirm('Apakah Anda yakin ingin pindah ke halaman Formulir?')">Formulir Pendaftaran</a>
+        <a href="interaktif.html" onclick="return confirm('Apakah Anda yakin ingin pindah ke halaman Interaktif?')"> Halaman Interaktif</a>
+    </nav>
+    <main class="page-shell">
+        <h1 id= "judul">Fransiska Farica Augustin Giri</h1>
+        <section class="kartu-profil kartu-identitas">
+            <div class ="kontainer-profil">
+                <div>
+                    <img src="apple.jpg" alt="Foto Profil" width="200">
+                </div>
+
+                <div>
+                    <p  class="bio">240712755 - Software Engineering</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="profil-grid">
+            <section class="kartu-profil">
+                <ul>
+                    <li class="bio">Desain Interaksi</li>
+                    <li>Pemrograman Aplikasi Web</li>
+                    <li>Pengembangan Perangkat Lunak Agile</li>
+                </ul>
+            </section>
+
+            <section class="kartu-profil">
+                <ol>
+                    <li>Mengikuti kelas disemua matakuliah tanpa membolos</li>
+                    <li>Mengulik kembali mengenai HTML, CSS, dan JavaScript</li>
+                    <li>Membuat proyek proyek kecil</li>
+                </ol>
+            </section>
         </div>
 
-        <div>
-            <p  class="bio">240712755 - Software Engineering</p>
-        </div>
-
-    </div>
-    
-    
-    <ul> 
-        <li class="bio">Desain Interaksi</li>
-        <li>Pemrograman Aplikasi Web</li>
-        <li>Pengembangan Perangkat Lunak Agile</li>
-    </ul>
-
-    <ol> 
-        <li>Mengikuti kelas disemua matakuliah tanpa membolos</li>
-        <li>Mengulik kembali mengenai HTML, CSS, dan JavaScript</li>
-        <li>Membuat proyek proyek kecil</li>
-    </ol>
-
-   <table border="1">
+        <section class="kartu-profil jadwal-card">
+            <div class="tabel-scroll">
+                <table border="1">
     <tr>
         <th>Sesi</th>
         <th>Senin</th>
@@ -77,6 +90,10 @@
         <td>-</td>
         <td>-</td>
         <td>-</td>
-    </table>
+                </table>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
